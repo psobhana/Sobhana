@@ -11,7 +11,7 @@ ini_set('display_errors', 1);
 $host   = "localhost";              // Usually localhost
 $dbname = "sobhanan_Talks";     // Example: sobhanan_talksdb
 $user   = "sobhanan_Mettavihari";       // Example: sobhanan_user
-$pass   = "Metta_Vihari1";       // Your DB password
+$pass   = "pass";       // Your DB password
 
 /* ===== CREATE PDO CONNECTION ===== */
 try {
