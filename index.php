@@ -35,6 +35,7 @@
 
 <script>
 <?php include 'js/scripts.js'; ?>
+<?php include 'js/search.js'; ?>
 </script>
 </body>
 </html>

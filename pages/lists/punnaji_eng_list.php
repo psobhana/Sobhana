@@ -15,9 +15,9 @@ if ($page < 1) {
 $offset = ($page - 1) * $limit;
 
 /* Fixed Filter */
-$author   = "Dhammagaru";
+$author   = "Punnaji";
 $length   = "Long";
-$language = "Sinhala";
+$language = "English";
 
 /* Count total rows */
 $countSql = "SELECT COUNT(*) FROM Talk_list2
@@ -105,10 +105,10 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <thead>
                             <tr>
                                 <th>No.</th>
-                                <th>File</th>
                                 <th>Title</th>
-                                <th>Audio</th>
-                                <th>Video</th>
+                                <th class="audio-column">Audio</th>
+				<th class="video-column">Video</th>
+				<th class="share-column">Share</th>
                               
                             </tr>
                         </thead>
@@ -132,51 +132,104 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                             <tr>
 
-                                <!-- Auto Number -->
-                                <td><?= $number++ ?></td>
+    <!-- Auto Number -->
+    <td><?= $number++ ?></td>
 
-                                <!-- File -->
-                                <td>
-                                    <?= htmlspecialchars($row['file_number']) ?>
-                                </td>
+    <!-- Title + Icons -->
+    <td class="title-cell">
 
-                                <!-- Title -->
-                                <td>
-                                    <?= htmlspecialchars($row['title']) ?>
-                                </td>
+        <div class="title-text">
+            <?= htmlspecialchars($row['title']) ?>
+        </div>
 
-                                <!-- Audio -->
-                                <td>
-                                    <button class="btn btn-primary"
-                                            onclick="playAudio('<?= $mp3Link ?>')">
+        <div class="mobile-icons">
 
-                                        <img src="../../images/soundwave.svg"
-                                             alt="Audio"
-                                             class="table-icon">
+            <!-- Audio -->
+            <button class="btn btn-primary"
+                    onclick="playAudio('<?= $mp3Link ?>')">
 
-                                    </button>
-                                </td>
+                <img src="../../images/soundwave.svg"
+                     alt="Audio"
+                     class="table-icon">
 
-                                <!-- Video -->
-                                <td>
-                                    <?php if (!empty($row['youtube'])): ?>
+            </button>
 
-                                        <button class="btn btn-primary"
-                                                onclick="openVideo('<?= htmlspecialchars($row['youtube']) ?>')">
+            <!-- Video -->
+            <?php if (!empty($row['youtube'])): ?>
 
-                                            <img src="../../images/youtube2.svg"
-                                                 alt="YouTube"
-                                                 class="table-icon">
+                <button class="btn btn-primary"
+                        onclick="openVideo('<?= htmlspecialchars($row['youtube']) ?>')">
 
-                                        </button>
+                    <img src="../../images/youtube2.svg"
+                         alt="YouTube"
+                         class="table-icon">
 
-                                    <?php endif; ?>
-                                </td>
+                </button>
 
-                                
-                                
+            <?php endif; ?>
 
-                            </tr>
+		<!-- Share -->
+	<button type="button"
+        class="btn btn-primary"
+        onclick="shareAudio(<?= htmlspecialchars(json_encode($mp3Link), ENT_QUOTES, 'UTF-8') ?>)"
+        aria-label="Share audio">
+
+    <img src="../../images/share.svg"
+         alt="Share"
+         class="table-icon">
+
+		</button>
+
+
+
+        </div>
+
+    </td>
+
+    <!-- Desktop Audio -->
+    <td class="audio-column">
+        <button class="btn btn-primary"
+                onclick="playAudio('<?= $mp3Link ?>')">
+
+            <img src="../../images/soundwave.svg"
+                 alt="Audio"
+                 class="table-icon">
+
+        </button>
+    </td>
+
+    <!-- Desktop Video -->
+    <td class="video-column">
+        <?php if (!empty($row['youtube'])): ?>
+
+            <button class="btn btn-primary"
+                    onclick="openVideo('<?= htmlspecialchars($row['youtube']) ?>')">
+
+                <img src="../../images/youtube2.svg"
+                     alt="YouTube"
+                     class="table-icon">
+
+            </button>
+
+        <?php endif; ?>
+    </td>
+
+    <!-- Desktop Share -->
+<td class="share-column">
+    <button type="button"
+            class="btn btn-primary"
+            onclick="shareAudio(<?= htmlspecialchars(json_encode($mp3Link), ENT_QUOTES, 'UTF-8') ?>)"
+            aria-label="Share audio">
+
+        <img src="../../images/share.svg"
+             alt="Share"
+             class="table-icon">
+
+    </button>
+</td>
+
+
+</tr>
 
                         <?php endforeach; ?>
 

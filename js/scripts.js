@@ -16,9 +16,10 @@ document.addEventListener('keydown',e=>{
     }
 });
 
-function toggleSearch(){
-    alert('Search the full archive of teachings, articles, and meditations.');
-}
+
+/* =========================
+   Toggle Theme
+   ========================= */
 
 function toggleTheme(){
     const dark = document.body.classList.toggle('dark-mode');
@@ -43,3 +44,29 @@ function subscribe(e){
     e.preventDefault();
     alert('Thank you for subscribing!');
 }
+
+
+async function shareAudio(url) {
+    if (navigator.share) {
+        try {
+            await navigator.share({
+                title: 'Audio',
+                url: url
+            });
+        } catch (error) {
+            if (error.name !== 'AbortError') {
+                console.error(error);
+            }
+        }
+        return;
+    }
+
+    if (navigator.clipboard) {
+        await navigator.clipboard.writeText(url);
+        alert('Audio link copied.');
+        return;
+    }
+
+    window.prompt('Copy this audio link:', url);
+}
+

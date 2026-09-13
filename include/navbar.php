@@ -26,3 +26,5 @@
 <?php include 'include/navbar_mobile_items.php'; ?>
  
 </nav>
+
+<?php include 'include/search_overlay.php'; ?>

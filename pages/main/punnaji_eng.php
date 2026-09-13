@@ -37,6 +37,7 @@ include '../../include/header_pages.php';
 
 <script>
 <?php include '../../js/scripts.js'; ?>
+<?php include '../../js/search_pages.js'; ?>
 <?php include '../../js/av_players.js'; ?>
 </script>
 </body>

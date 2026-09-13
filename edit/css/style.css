@@ -1,0 +1,253 @@
+/* ===============================
+   RESET & BASE
+================================ */
+/* 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+} 
+*/
+
+body {
+	font-family: Arial;
+    background: #f1f5f9;
+	/* background:#f4f6f9; */
+	padding:20px; 
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.back-link {
+    margin-left: 15px;
+    text-decoration: none;
+ /* display: inline-block;
+    margin-top: 15px;*/
+}
+
+.message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* ===============================
+   PAGINATION
+================================ */
+
+.pagination { margin-top:15px; }
+.pagination a {
+    padding:6px 10px;
+    border:1px solid #ccc;
+    margin-right:4px;
+    background:white;
+}
+.pagination a.active {
+    background:#007bff;
+    color:white;
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+.navbar {
+    background: linear-gradient(90deg, #1e293b, #0f172a);
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    opacity: 0.8;
+}
+
+/* ===============================
+   CARD
+================================ */
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+.btn {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.btn-primary { background: #2563eb; color: white; }
+.btn-success { background: #16a34a; color: white; }
+.btn-warning { background: #f59e0b; color: white; }
+.btn-danger  { background: #dc2626; color: white; }
+.btn-secondary { background: #64748b; color: white; }
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* ===============================
+   TABLE
+================================ */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background:white;
+}
+
+th {
+    background:#333;
+	color:white; 
+	border:1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background: #f8fafc;
+}
+
+/* ===============================
+   FORM
+================================ */
+.form-group {
+    margin-bottom: 15px;
+ display: flex; 
+ gap: 5px; 
+ margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+
+
+/* ===============================
+   ALERT
+================================ */
+.alert {
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.alert-success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.alert-danger {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* ===============================
+   PAGINATION
+================================ */
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin-right: 4px;
+    background: white;
+    border: 1px solid #cbd5e1;
+    text-decoration: none;
+    color: #1e293b;
+}
+
+.pagination a.active {
+    background: #2563eb;
+    color: white;
+}
+
+/* ===============================
+   VIDEO POPUP
+================================ */
+.video-popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 380px;
+    max-width: 95%;
+    background: #000;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    z-index: 9999;
+}
+
+.video-header {
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111827;
+    color: white;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.video-popup iframe {
+    width: 100%;
+    height: 220px;
+}
