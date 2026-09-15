@@ -3,7 +3,7 @@
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'sobhanan_notepad2');
 define('DB_USER', 'sobhanan_notepad2');
-define('DB_PASS', 'metta300');
+define('DB_PASS', 'pass');
 define('DB_CHARSET', 'utf8mb4');
 
 function getDB() {

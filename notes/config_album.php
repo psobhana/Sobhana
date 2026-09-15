@@ -8,7 +8,7 @@
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'sobhanan_album');
 define('DB_USER', 'sobhanan_album');
-define('DB_PASS', 'metta400');
+define('DB_PASS', 'pass');
 define('DB_CHARSET', 'utf8mb4');
 
 // Site configuration

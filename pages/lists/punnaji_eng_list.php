@@ -62,26 +62,21 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <div style="flex:1">
 
                     <h3>Bhante Punnaji</h3>
+			<!-- <p>with Sharon Salzberg</p> -->
+                    
+		<div class="meditation-bottom">
 
-                    <div class="meditation-bottom">
-                        <span class="duration">Archive.org files</span>
+		<p>Bhante Punnaji was born in Sri Lanka and has lived in the 
+					United States since 1971. He conducts meditation retreats 
+					and Dhamma discussions in Washington DC, Boston, 
+					Los Angeles, Toronto and many other locations, from time to 
+					time. He is well known for explaining Buddhist teachings 
+					by comparing them with modern science and psychology.</p>
+		</div>
+					
+	<!-- <div class="meditation-bottom"><span class="duration">15 min</span><button class="listen">Listen Now</button></div> -->
 
-                        <a href="https://www.sobhana.net/audio/english/bodhi/index.htm"
-                           target="_blank"
-                           class="card-link">
-                            <button class="listen">Archive</button>
-                        </a>
-                    </div>
-
-                    <div class="meditation-bottom">
-                        <span class="duration">Old site</span>
-
-                        <a href="https://www.sobhana.net/audio/english/bodhi/index.htm"
-                           target="_blank"
-                           class="card-link">
-                            <button class="listen">Sobhana.net</button>
-                        </a>
-                    </div>
+                    
 
                 </div>
 
@@ -259,5 +254,46 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
 
     </div>
+	
+	
+	
+<div class="container_max">
+<div class="meditation-panes">
+	
+<div class="header-panes"> Bhante Punnaji's External Resources</div>
+  <div class="panes">
+ 
+ <div class="pane">
+  <div class="teacher-icon">
+    <a href="https://www.youtube.com/@bhantepunnajivideo" target="_blank"
+       class="listen-teacher" aria-label="YouTube">
+      <img src="../../images/youtube2.svg" alt="Punnaji Thero">
+    </a>
+    <p><a href="https://www.youtube.com/@bhantepunnajivideo"
+          target="_blank" aria-label="YouTube">YouTube Channel</a></p>
+  </div>
+</div>
+ 
+ <div class="pane">
+  <div class="teacher-icon">
+    <a href="https://archive.org/details/BhantePunnaji" target="_blank"
+       class="listen-teacher" aria-label="Internet Archive">
+      <img src="../../images/archive.svg" alt="Punnaji Thero">
+    </a>
+    <p><a href="https://archive.org/details/BhantePunnaji"
+          target="_blank" aria-label="Internet Archive">Internet Archive</a></p>
+  </div>
+</div>
+			
 
+    <div class="pane"><!-- Pane 3 --></div>
+
+  </div>
+	
+</div>
+</div>
+
+	
+	
+	
 </section-max>
