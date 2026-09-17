@@ -387,10 +387,24 @@ section-max{padding:0px 0}
 .workshop{border:1px solid var(--border2);border-radius:24px;padding:30px;transition:.2s}
 #quote {
     color: #92400e;
+    font-size: 24px;
+    line-height: 1.7;
 }
+
+#reference {
+	    color: #78716c;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
 body.dark-mode #quote {
     color: #d6d3d1;
 }
+
+body.dark-mode #reference {
+    color: #a8a29e;
+}
+
 .workshop:hover{border-color:#92400e}
 .workshop small{color:#78716c;text-transform:uppercase;letter-spacing:2px}
 .workshop h3{font-size:24px;margin:12px 0}

@@ -16,6 +16,7 @@
                 <h3>Tipitaka Chanting</h3> 
                 <p>dhammavoice.lk</p>  -->
 				<div id="quote"></div>
+				<div id="reference"></div>
 
             </div>
 
