@@ -5,7 +5,9 @@
 <?php include 'include/header.php'; ?>
 
 <body>
-
+<!-- Audio Video Players-->
+ <?php include 'include/av_players.php'; ?>
+ 
 <!-- Navigation Bar -->
 <?php include 'include/navbar.php'; ?>
 
@@ -15,7 +17,8 @@
 <!-- Moving Pictures -->
 <?php include 'include/movingpic.php'; ?>
 
-<!-- Mouse Over Boxes-->
+<!-- Mouse Over Boxes - Random Quote-->
+<?php include 'pages/lists/quotes.php'; ?>
 <?php include 'include/mouseoverbox.php'; ?>
 
 <!-- Left Right Section -->
@@ -36,6 +39,7 @@
 <script>
 <?php include 'js/scripts.js'; ?>
 <?php include 'js/search.js'; ?>
+<?php include 'js/av_players.js'; ?>
 </script>
 </body>
 </html>

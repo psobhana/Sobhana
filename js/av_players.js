@@ -193,3 +193,36 @@ makeDraggable(
     "audioPopup",
     "audioDragHandle"
 );
+
+
+// ====================================
+// 5. RANDOM AUDIO PLAYER
+// ====================================
+
+
+async function loadSongs() {
+    try {
+        const response = await fetch('pages/lists/pirith.json');
+        const jsonData = await response.json();
+        return jsonData.songs;
+    } catch (error) {
+        console.error("Error loading songs:", error);
+        return [];
+    }
+}
+
+
+async function playRandomSong() {
+
+    const songs = await loadSongs();
+
+    if (songs.length === 0) return;
+
+    const randomIndex =
+        Math.floor(Math.random() * songs.length);
+
+    const randomSong = songs[randomIndex];
+
+    // Use the audio player/popup from Script 2
+    playAudio(randomSong);
+}

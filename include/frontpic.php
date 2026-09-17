@@ -5,13 +5,17 @@
         <p>Though a lotus flower grows in the murky water, it breaks the surface and fragrantly blooms. Thus the wise are born in worldly society yet they rise above it and realize Nibbana - The Buddha.
 		<br>Be a Lotus Flower, follow The Buddha's Five Precepts and Eightfold Path.
 		</p>
-        
-	<div class="hero-buttons">
-            <a href="#" class="hero-btn">Five Precepts</a>
-	    <a href="#" class="hero-btn">Random Chanting</a>
-             <!-- <a href="#" class="hero-btn secondary">Browse Free Teachings</a> -->
-        </div>
 		
+  <?php $mp3Link = "https://storage.googleapis.com/sobhana/pansil.mp3";?>	
+	
+	<div class="hero-buttons">
+	    <button class="hero-btn" onclick="playAudio('<?= $mp3Link ?>')">Five Precepts</button> 
+	    <button class="hero-btn" onclick="playRandomSong();">Pirith Chanting</button> 
+ 
+ <!-- <a href="#" class="hero-btn" onclick="playAudio('https://storage.googleapis.com/sobhana/pansil.mp>')">Five Precepts</a> -->
+<!-- <a href="#" class="hero-btn secondary">Browse Free Teachings</a> -->
+        </div>
+
          <!-- <div class="stats">
             <span>1,200+ Articles</span>
             <span>Live Events Weekly</span>

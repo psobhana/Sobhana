@@ -86,7 +86,7 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     </div>
 
-
+	       <!-- Main table -->
     <div class="container_max">
 
         <div class="meditation-grid_max">
@@ -256,11 +256,11 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </div>
 	
 	
-	
+	       <!-- External links -->
 <div class="container_max">
 <div class="meditation-panes">
 	
-<div class="header-panes"> Bhante Punnaji's External Resources</div>
+<div class="header-panes"> External Resources of Bhante Punnaji</div>
   <div class="panes">
  
  <div class="pane">
@@ -293,7 +293,4 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </div>
 </div>
 
-	
-	
-	
 </section-max>
