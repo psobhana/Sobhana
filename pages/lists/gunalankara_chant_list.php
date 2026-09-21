@@ -15,9 +15,9 @@ if ($page < 1) {
 $offset = ($page - 1) * $limit;
 
 /* Fixed Filter */
-$author   = "Punnaji";
+$author   = "Gunalankara";
 $length   = "Long";
-$language = "English";
+$language = "Pali";
 
 /* Count total rows */
 $countSql = "SELECT COUNT(*) FROM Talk_list2
@@ -54,27 +54,30 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
             <div class="meditation">
 
-   <div class="container2">
 
 
-<img src="../../images/punnaji.webp" alt="Punnaji Thero" class="content-image">
+ <div class="container2">
 
-<h3>Bhante Punnaji</h3>
 
-<p>Bhante Punnaji was born in Sri Lanka and has lived in the 
-United States since 1971. He conducts meditation retreats 
-and Dhamma discussions in Washington DC, Boston, 
-Los Angeles, Toronto and many other locations, from time to 
-by comparing them with modern science and psychology.</p>
+<img src="../../images/siri_gunalankara.png" alt="Siri Gunalankara Thero" class="content-image">
+
+<h3>Kapuduwe Siri Gunalankara Thero</h3>
+
+<p>Kapuduwe Siri Gunalankara Thero (Horapavita Hamuduruwo) is the 
+founder of the Five Precepts Project, which is well known and 
+followed by many Sri Lankan Buddhists.</p>
 
 <div class="clear"></div>
 
-<ul class="list-dotted-move">
-		<li><a href="punnaji_sin.php">Sinhala Dhamma Talks</a></li>
-</ul>
+<!-- <ul class="list-dotted-move">
+		<li><a href="punnaji_eng.php">ඉංග්‍රීසි ධර්ම දේශනා හා දහම් ලිපි</a></li>
+</ul> -->
 
 
 </div>
+
+
+
             </div>
 
         </div>
@@ -82,15 +85,14 @@ by comparing them with modern science and psychology.</p>
     </div>
 
 	       <!-- Main table -->
-<?php include '../../include/table.php'; ?>
-
+ <?php include '../../include/table.php'; ?>	
 	
 	       <!-- External links -->
 <div class="container_max">
 <div class="meditation-panes">
 	
-<div class="header-panes">External Resources of Bhante Punnaji</div>
-<?php include '../lists/punnaji_links.php'; ?>
+<div class="header-panes">External Resources of Siri Gunalankara Thero</div>
+<?php include '../lists/gunalankara_links.php'; ?>
 	
 </div>
 </div>

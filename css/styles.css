@@ -10,6 +10,7 @@
     --border2:#4c2208;
     --green:#047857;
     --dark:#1c1917;
+	--icons:#000;
 }
 body.dark-mode{
     --bg:#181614;
@@ -20,6 +21,7 @@ body.dark-mode{
     --border2:#91410f;
     --green:#34d399;
     --dark:#0c0a09;
+	--icons:#ffc107;
 }
 body.dark-mode .navbar,
 body.dark-mode .workshops,
@@ -382,7 +384,8 @@ section-max{padding:0px 0}
 .workshops{background:#f7f5f2}
 
 .workshop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.workshop-grid-max{display:grid;grid-template-columns:1fr;gap:24px}
+.workshop-grid-max{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+/*.workshop-grid-max{display:grid;grid-template-columns:1fr;gap:24px}*/
 
 .workshop{border:1px solid var(--border2);border-radius:24px;padding:30px;transition:.2s}
 #quote {
@@ -404,6 +407,27 @@ body.dark-mode #quote {
 body.dark-mode #reference {
     color: #a8a29e;
 }
+
+#quote2 {
+    color: #92400e;
+    font-size: 24px;
+    line-height: 1.7;
+}
+
+#reference2 {
+	    color: #78716c;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+body.dark-mode #quote2 {
+    color: #d6d3d1;
+}
+
+body.dark-mode #reference2 {
+    color: #a8a29e;
+}
+
 
 .workshop:hover{border-color:#92400e}
 .workshop small{color:#78716c;text-transform:uppercase;letter-spacing:2px}
@@ -666,6 +690,20 @@ visual style as the rest of the template, use: */
     padding: 0;
 }
 
+.btn-primary2 {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+}
+   
+
+   
+	  
 /*.btn-primary {
     border: none;
     outline: none;
@@ -674,10 +712,11 @@ visual style as the rest of the template, use: */
     cursor: pointer;
 } */
 
-.share-column {
-    text-align: center;
-}
 
+
+.audio-column,
+.video-column,
+.share-column {text-align: center;}
 
 
 .header-panes {
@@ -688,6 +727,45 @@ visual style as the rest of the template, use: */
 }
   .panes { display: flex; flex-wrap: wrap; }
   .pane { flex: 1 1 250px; padding: 10px; }
+
+/* ===============================
+   Text Wrap
+================================ */
+
+.container2 {
+    max-width: 100%; 
+    margin: auto;
+}
+
+.content-image {
+    float: left;
+    width: 150px;
+    max-width: 45%;
+    height: auto;
+    margin: 0 25px 15px 0;
+	border-radius:18px;
+    transition: transform .3s ease;	
+}
+
+.content-image:hover {
+    transform: scale(1.04);
+    transition: transform .3s ease;
+}
+
+.clear {
+    clear: both;
+}
+
+
+@media (max-width: 600px) {
+    .content-image {
+        width: 40%;
+        max-width: none;
+        margin: 0 15px 10px 0;
+    border-radius:18px;
+    transition:transform .3s ease;		
+    }
+}
 
 /* ===============================
    TABLE
@@ -930,6 +1008,171 @@ tr:hover {
         height: 46px;
     }
 }
+
+/* ===============================
+   List Types
+================================ */
+/* =========================
+   Dotted List - Basic
+   ========================= */
+
+.list-dotted-move {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.list-dotted-move li {
+    position: relative;
+    padding: 7px 0 7px 24px;
+    color: var(--text);
+}
+
+.list-dotted-move li::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 15px;
+    width: 7px;
+    height: 7px;
+    background: var(--primary);
+    border-radius: 50%;
+}
+
+.list-dotted-move li:hover {
+    border-color: var(--primary);
+    transform: translateY(-3px);
+    opacity: .75;
+    transition: transform .2s ease, opacity .2s ease;
+}
+
+/* ===============================
+   CSS Icons
+================================ */
+/* =========================
+   Audio icon
+   ========================= */
+.audio.icon {
+  color: var(--icons);
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 8px;
+  width: 9px;
+  height: 7px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  border-radius: 0 0 50% 50%;
+}
+
+.audio.icon:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: -6px;
+  width: 5px;
+  height: 10px;
+  border: solid 1px currentColor;
+  border-radius: 4px;
+}
+
+.audio.icon:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  bottom: -4px;
+  width: 1px;
+  height: 4px;
+  background-color: currentColor;
+}
+
+
+    body.dark-mode .audio.icon,
+    body.dark-mode .audio.icon::before,
+    body.dark-mode .audio.icon::after {  color: var(--icons);} 
+
+/* =========================
+   Video TV icon
+   ========================= */
+
+.tv.icon {
+  color: var(--icons);
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 3px;
+  width: 15px;
+  height: 10px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+
+.tv.icon:before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  bottom: -4px;
+  width: 1px;
+  height: 3px;
+  background-color: currentColor;
+}
+
+.tv.icon:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  bottom: -4px;
+  width: 7px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+    body.dark-mode .tv.icon,
+    body.dark-mode .tv.icon::before,
+    body.dark-mode .tv.icon::after {  color: var(--icons);} 
+
+/* =========================
+   Shaer Link icon
+   ========================= */
+.link.icon {
+  color: var(--icons);
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 10px;
+  width: 7px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.link.icon:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -7px;
+  width: 8px;
+  height: 5px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+
+.link.icon:after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  right: -7px;
+  width: 8px;
+  height: 5px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+
+   body.dark-mode .link.icon,
+    body.dark-mode .link.icon::before,
+    body.dark-mode .link.icon::after {  color: var(--icons);} 
+
+
+
 
 
 
@@ -1282,6 +1525,7 @@ tr:hover {
     }
 	
     .cards,.workshop-grid{grid-template-columns:1fr 1fr}
+	.workshop-grid-max{grid-template-columns:1fr 1fr}
     .explore-grid{grid-template-columns:1fr 1fr}
     .live-grid{grid-template-columns:1fr}
     .sticky{position:static}
@@ -1368,7 +1612,7 @@ tr:hover {
     .section-head{display:block}
     .view-all{display:inline-block;margin-top:15px}
     .section-title{font-size:39px}
-    .cards,.workshop-grid,.explore-grid,.meditation-grid{grid-template-columns:1fr}
+    .cards,.workshop-grid,.workshop-grid-max,.explore-grid,.meditation-grid{grid-template-columns:1fr}
     .card-image{height:210px}
     .live-title{font-size:42px}
     .event{padding:18px;gap:15px}

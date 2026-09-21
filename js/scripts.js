@@ -70,22 +70,3 @@ async function shareAudio(url) {
     window.prompt('Copy this audio link:', url);
 }
 
-/* =========================
-   Random Quote
-   ========================= */
-
-const quotes = <?php
-echo json_encode($quotes, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
-?>;
-
-// Select a random quote
-const randomIndex = Math.floor(Math.random() * quotes.length);
-
-const quote = quotes[randomIndex];
-
-// Display quote
-document.getElementById("quote").textContent = quote.text;
-
-// Display reference
-document.getElementById("reference").textContent = "— " + quote.reference;
-

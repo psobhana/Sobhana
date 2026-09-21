@@ -17,10 +17,12 @@
                 <p>dhammavoice.lk</p>  -->
 				<div id="quote"></div>
 				<div id="reference"></div>
-
             </div>
 
-
+		<div class="workshop">
+					<div id="quote2"></div>
+					<div id="reference2"></div>
+		</div>
 
 	
         </div>

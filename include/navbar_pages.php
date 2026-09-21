@@ -6,12 +6,19 @@
             <div class="logo-mark"><img src="../../images/lotus.svg" alt="Sobhana Net"></div>
             <div>
                 <div class="logo-title">SobhanaNet</div>
-                <p class="logo-sub">An Audio-Visual Library of Theravada Buddhism</p>
+                <p class="logo-sub">Buddhist Library</p>
             </div>
         </div>
 	</a>
 
-<?php include '../../include/navbar_desktop_items.php'; ?>
+<div class="desktop-nav">
+            <a href="../../index.php" class="nav-link">Home</a>
+            <a href="../main/english.php" class="nav-link">Eglish</a>
+            <a href="../main/sinhala.php" class="nav-link">සිංහල</a>
+            <a href="../main/chanting.php" class="nav-link">Chanting</a>
+            <a href="#" class="nav-link">Live Events</a>
+            <a href="#" class="nav-link">Store</a>
+</div>
  
 
         <div class="nav-actions">
@@ -26,7 +33,18 @@
 		</div>
     </div>
 
-<?php include '../../include/navbar_mobile_items.php'; ?>
+  <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-inner">
+            <a href="../../index.php">Home</a>
+            <a href="../main/english.php">Eglish</a>
+            <a href="../main/sinhala.php">සිංහල</a>
+            <a href="../main/chanting.php">Chanting</a>
+            <a href="#">Live Events</a>
+            <a href="#">Free Meditations</a>
+            <a href="#">Store</a>
+            <!-- <a href="#" class="mobile-join">Join Lion’s Roar</a>  -->
+        </div>
+    </div>
     
 </nav>
 

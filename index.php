@@ -19,6 +19,7 @@
 
 <!-- Mouse Over Boxes - Random Quote-->
 <?php include 'pages/lists/quotes.php'; ?>
+<?php include 'pages/lists/sutta-quotes.php'; ?>
 <?php include 'include/mouseoverbox.php'; ?>
 
 <!-- Left Right Section -->
@@ -38,6 +39,7 @@
 
 <script>
 <?php include 'js/scripts.js'; ?>
+<?php include 'js/quotes.js'; ?>
 <?php include 'js/search.js'; ?>
 <?php include 'js/av_players.js'; ?>
 </script>

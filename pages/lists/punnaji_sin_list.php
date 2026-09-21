@@ -17,7 +17,7 @@ $offset = ($page - 1) * $limit;
 /* Fixed Filter */
 $author   = "Punnaji";
 $length   = "Long";
-$language = "English";
+$language = "Sinhala";
 
 /* Count total rows */
 $countSql = "SELECT COUNT(*) FROM Talk_list2
@@ -54,27 +54,30 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
             <div class="meditation">
 
-   <div class="container2">
+
+
+ <div class="container2">
 
 
 <img src="../../images/punnaji.webp" alt="Punnaji Thero" class="content-image">
 
-<h3>Bhante Punnaji</h3>
+<h3>පූජ්‍ය මඩවල පුණ්ණජි හිමිපාණන් වහන්සේ</h3>
 
-<p>Bhante Punnaji was born in Sri Lanka and has lived in the 
-United States since 1971. He conducts meditation retreats 
-and Dhamma discussions in Washington DC, Boston, 
-Los Angeles, Toronto and many other locations, from time to 
-by comparing them with modern science and psychology.</p>
+<p>පූජ්‍ය මඩවල පුණ්ණජි හිමිපාණන් වහන්සේ ඇමරිකාව, කැනඩාව ආදී රටවල 
+ඉංග්‍රීසි භාශාවෙන් ධර්ම දේශනා පැවැත්වීමට හා භාවනා පන්ති ආදිය පැවැත්වීමට 
+මහත් ප්‍රසිද්ධියක් ඉසිලූ හිමි නමකි.</p>
 
 <div class="clear"></div>
 
 <ul class="list-dotted-move">
-		<li><a href="punnaji_sin.php">Sinhala Dhamma Talks</a></li>
+		<li><a href="punnaji_eng.php">ඉංග්‍රීසි ධර්ම දේශනා හා දහම් ලිපි</a></li>
 </ul>
 
 
 </div>
+
+
+
             </div>
 
         </div>
@@ -82,14 +85,13 @@ by comparing them with modern science and psychology.</p>
     </div>
 
 	       <!-- Main table -->
-<?php include '../../include/table.php'; ?>
-
+ <?php include '../../include/table.php'; ?>	
 	
 	       <!-- External links -->
 <div class="container_max">
 <div class="meditation-panes">
 	
-<div class="header-panes">External Resources of Bhante Punnaji</div>
+<div class="header-panes">පුණ්ණජි හිමිපාණන් වහන්සේ ගේ තවත් සබැඳි</div>
 <?php include '../lists/punnaji_links.php'; ?>
 	
 </div>

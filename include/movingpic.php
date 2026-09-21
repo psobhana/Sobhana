@@ -23,7 +23,7 @@
             </article>
 	</a>
 	
-	<a href="https://www.sobhana.net/audio/sinhala/index.htm" class="card-link">
+	<a href="pages/main/sinhala.php" class="card-link">
             <article class="card">
                 <div class="card-image image-2"><img src="images/sinhala.jpg" alt="Sinhala"></div>
                 <div class="card-body">
@@ -35,7 +35,7 @@
             </article>
 	</a>
 
-	<a href="https://www.sobhana.net/audio/chants/index.htm" class="card-link">	
+	<a href="pages/main/chanting.php" class="card-link">	
             <article class="card">
                 <div class="card-image image-3"><img src="images/chanting.jpg" alt="Chanting"></div>
                 <div class="card-body">
