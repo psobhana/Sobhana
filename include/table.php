@@ -46,9 +46,14 @@
     <!-- Title + Icons -->
     <td class="title-cell">
 
-        <div class="title-text">
+		<div class="title-text">
+		<button type="button"
+			class="btn btn-primary2-max"
+                    onclick="playAudio('<?= $mp3Link ?>')">
             <?= htmlspecialchars($row['title']) ?>
-        </div>
+		</button>
+		</div>
+        
 
         <div class="mobile-icons">
 

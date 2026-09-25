@@ -15,7 +15,7 @@ if ($page < 1) {
 $offset = ($page - 1) * $limit;
 
 /* Fixed Filter */
-$author   = "Gunalankara";
+$author   = "BTC";
 $length   = "Long";
 $talk = "Chant";
 
@@ -59,13 +59,14 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
  <div class="container2">
 
 
-<img src="../../images/siri_gunalankara.png" alt="Siri Gunalankara Thero" class="content-image">
+<img src="../../images/btc.webp" alt="Siri Gunalankara Thero" class="content-image">
 
-<h3>Kapuduwe Siri Gunalankara Thero</h3>
+<h3>Siri Vajiragnana Dharmayathanaya</h3>
 
-<p>Kapuduwe Siri Gunalankara Thero (Horapavita Hamuduruwo) is the 
-founder of the Five Precepts Project, which is well known and 
-followed by many Sri Lankan Buddhists.</p>
+<p>Siri Vajiragnana Dharmayathanaya, Bhikkhu Training Center at Maharagama, Sri Lanka is a 
+well known organization for the training of bhikkhus, founded by 
+the late Madihe Pannasiha Mahanayaka Thera. There are many 
+Buddhist viharas all over the world run by students of this center.</p>
 
 <div class="clear"></div>
 
@@ -91,8 +92,8 @@ followed by many Sri Lankan Buddhists.</p>
 <div class="container_max">
 <div class="meditation-panes">
 	
-<div class="header-panes">External Resources of Siri Gunalankara Thero</div>
-<?php include '../lists/gunalankara_links.php'; ?>
+<div class="header-panes">External Resources of Bhikkhu Training Centre</div>
+<?php include '../lists/btc_links.php'; ?>
 	
 </div>
 </div>

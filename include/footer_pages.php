@@ -8,8 +8,10 @@
     <div class="logo-mark"><img src="../../images/lotus.svg" alt="Sobhana Net"></div>
     <span>Sobhana.net</span>
 </div>
-                <p class="footer-description">All Dhamma talks from this website are also available 
-				on our YouTube channel. You can download talks and articles here.</p>
+                <p class="footer-description">All Dhamma talks from this website are also 
+				available on our YouTube channel. You can download talks and articles 
+				here. Artificial Intelligence (AI) has not been used to create any of the 
+				Dhamma talks, articles, or chants on this website.</p>
                
 			   <div class="social">
     <!-- <a href="#" aria-label="Facebook">

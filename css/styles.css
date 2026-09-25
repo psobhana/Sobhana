@@ -694,13 +694,23 @@ visual style as the rest of the template, use: */
     border: none;
     outline: none;
     background-color: transparent;
-    color: white;
+    color:var(--text);
     border-radius: 50%;
     width: 32px;
     height: 32px;
     padding: 0;
 }
-   
+
+
+
+.btn-primary2-max {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color:var(--text);
+    padding: 0;
+    text-align: left;
+} 
 
    
 	  
@@ -1676,7 +1686,11 @@ tr:hover {
         min-width: 32px;
         padding-left: 4px;
         padding-right: 2px;
+        padding-top: 8px;
+	
         text-align: center;
+        vertical-align: top;
+
     }
 
     /* Reduce gap between No. and Title */

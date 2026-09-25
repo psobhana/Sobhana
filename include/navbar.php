@@ -1,5 +1,5 @@
 <nav class="navbar">
-    <div class="container nav-inner">
+    <div class="container2 nav-inner">
         
 	<a href="index.php" class="card-link">
 	<div class="logo">

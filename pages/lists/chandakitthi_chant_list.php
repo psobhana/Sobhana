@@ -15,7 +15,7 @@ if ($page < 1) {
 $offset = ($page - 1) * $limit;
 
 /* Fixed Filter */
-$author   = "Gunalankara";
+$author   = "Chandakitthi";
 $length   = "Long";
 $talk = "Chant";
 
@@ -47,25 +47,20 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <section-max class="meditations">
 
-    <div class="container_max">
-
+<div class="container_max">
         <!-- Teacher Card -->
-        <div class="meditation-grid_max">
+ <div class="meditation-grid_max">
+<div class="meditation">
+<div class="container2">
 
-            <div class="meditation">
+<img src="../../images/chandakitthi.png" alt="Chandakitthi" class="content-image">
 
+<h3>Talalle Chandakitthi Thero</h3>
 
-
- <div class="container2">
-
-
-<img src="../../images/siri_gunalankara.png" alt="Siri Gunalankara Thero" class="content-image">
-
-<h3>Kapuduwe Siri Gunalankara Thero</h3>
-
-<p>Kapuduwe Siri Gunalankara Thero (Horapavita Hamuduruwo) is the 
-founder of the Five Precepts Project, which is well known and 
-followed by many Sri Lankan Buddhists.</p>
+<p>Rev. Talalle Chandakitthi Thero lives at the Narada Centre in 
+Colombo 7, Sri Lanka. He is a well‑known Dhamma teacher 
+in Sri Lanka and the founder of the <a href="https://dhammadeepa.lk/" target="_blank">Dhammadeepa Foundation</a>, 
+a welfare organization.</p>
 
 <div class="clear"></div>
 
@@ -73,16 +68,10 @@ followed by many Sri Lankan Buddhists.</p>
 		<li><a href="punnaji_eng.php">ඉංග්‍රීසි ධර්ම දේශනා හා දහම් ලිපි</a></li>
 </ul> -->
 
-
 </div>
-
-
-
-            </div>
-
-        </div>
-
-    </div>
+</div>
+</div>
+</div>
 
 	       <!-- Main table -->
  <?php include '../../include/table.php'; ?>	
@@ -91,10 +80,9 @@ followed by many Sri Lankan Buddhists.</p>
 <div class="container_max">
 <div class="meditation-panes">
 	
-<div class="header-panes">External Resources of Siri Gunalankara Thero</div>
-<?php include '../lists/gunalankara_links.php'; ?>
+<div class="header-panes">External Resources of  Talalle Chandakitthi Thero</div>
+<?php include '../lists/chandakitthi_links.php'; ?>
 	
 </div>
 </div>
-
 </section-max>
