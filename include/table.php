@@ -62,7 +62,7 @@
 			class="btn btn-primary2"
                     onclick="playAudio('<?= $mp3Link ?>')">
 		
-		<div class="audio icon"></div>
+		<div class="volume icon"><i class="volumeThree icon"></i></div>
                 <!-- <img src="../../images/soundwave.svg"
                      alt="Audio"
                      class="table-icon">  -->
@@ -75,7 +75,7 @@
                 <button type="button"
 				class="btn btn-primary2"
                         onclick="openVideo('<?= htmlspecialchars($row['youtube']) ?>')">
-			<div class="tv icon"></div>
+			<div class="play-button icon"></div>
                     <!-- <img src="../../images/youtube2.svg"
                          alt="YouTube"
                          class="table-icon"> -->
@@ -89,7 +89,8 @@
         class="btn btn-primary2"
         onclick="shareAudio(<?= htmlspecialchars(json_encode($mp3Link), ENT_QUOTES, 'UTF-8') ?>)"
         aria-label="Share audio">
-		<div class="link icon"></div>
+		<!-- <div class="link icon"></div> -->
+		<div class="share-filled icon"></div>
 		<!-- <img src="../../images/share.svg"
          alt="Share"
          class="table-icon"> -->
@@ -108,7 +109,7 @@
 		class="btn btn-primary2"
                 onclick="playAudio('<?= $mp3Link ?>')">
 
-		<div class="audio icon"></div>
+		<div class="volume icon"><i class="volumeThree icon"></i></div>
             <!-- <img src="../../images/soundwave.svg"
                  alt="Audio"
                  class="table-icon"> -->
@@ -123,7 +124,7 @@
             <button type="button"
 			class="btn btn-primary2"
                     onclick="openVideo('<?= htmlspecialchars($row['youtube']) ?>')">
-		<div class="tv icon"></div>
+		<div class="play-button icon"></div>
                 <!-- <img src="../../images/youtube2.svg"
                      alt="YouTube"
                      class="table-icon"> -->
@@ -139,7 +140,8 @@
             class="btn btn-primary2"
             onclick="shareAudio(<?= htmlspecialchars(json_encode($mp3Link), ENT_QUOTES, 'UTF-8') ?>)"
             aria-label="Share audio">
-		<div class="link icon"></div>
+		<!-- <div class="link icon"></div> -->
+		<div class="share-filled icon"></div>
         <!-- <img src="../../images/share.svg"
              alt="Share"
              class="table-icon"> -->

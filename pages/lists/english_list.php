@@ -8,6 +8,7 @@
 
         <div class="meditation-grid">
 		
+	<!-- Add this later
 	<a href="https://www.sobhana.net/audio/english/bodhi/index.htm" target="_blank" class="card-link">
             <div class="meditation">
                 <div class="teacher-image teacher-1">
@@ -28,7 +29,7 @@
 					Theravada Buddhism.</p>
                 </div>
             </div>
-	</a>
+	</a>  -->
 
 
 		
@@ -51,7 +52,7 @@
 	</a>
 	
 	
-	<a href="https://www.sobhana.net/audio/english/rahula/index.htm" target="_blank" class="card-link">
+	<a href="yrahula_eng.php" class="card-link">
             <div class="meditation">
                 <div class="teacher-image teacher-1">
                     <img src="../../images/yrahula.jpg"
@@ -59,30 +60,17 @@
                 </div>
                 <div style="flex:1">
                     <h3>Bhante Yogavacara Rahula</h3>
-                    <p>Bhante Yogavacara Rahula was born as Scott Joseph Du Prez 
-					in Southern California in 1948. He grew up during the 60's 
-					and entered the U.S. Army for three years in 1967, spending 
-					ten months in Vietnam. Adopting the lifestyle of a 
-					wandering hippie, he began a long odyssey starting in 
-					Scandinavia which took him half way around the world to 
-					India and Nepal.
-
-					<!-- In Nepal he encountered his first spiritual 
-					teachers, Tibetan Lamas, at a month long meditation 
-					course, by the end of which he was converted more or less 
-					to being a Buddhist or at least an earnest seeker after Truth. -->
-					
-					His search brought him south to Sri Lanka where 
-					he ordained as a Buddhist monk in 1975. He remained in 
-					Sri Lanka off and on until 1986 when he returned to 
-					the U.S.A. Since then he has been living at the Bhavana 
-					Society, a forest monastery/meditation center in 
-					West Virginia.</p>
+                    <p>Born in Southern California as Scott DuPrez in 1948. 
+					Became a Buddhist monk in 1975 at Gothama Thapovanaya, 
+					Kalupaluwawa, Sri Lanka. Lived at the Bhavana Society, 
+					West Virginia, USA from 1986 until 2010. 
+					Now Residing/teaching at the Lion of Wisdom Meditation 
+					Center near Damascus,Md.</p>
                 </div>
             </div>
 	</a>	
 		
-	<a href="https://www.sobhana.net/audio/english/dhammagaru/index.htm" target="_blank" class="card-link">
+	<a href="dhammagaru_eng.php" class="card-link">
             <div class="meditation">
                 <div class="teacher-image teacher-1">
                     <img src="../../images/dhammagaru.jpg"

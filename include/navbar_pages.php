@@ -16,8 +16,8 @@
             <a href="../main/english.php" class="nav-link">Eglish</a>
             <a href="../main/sinhala.php" class="nav-link">සිංහල</a>
             <a href="../main/chanting.php" class="nav-link">Chanting</a>
-            <a href="#" class="nav-link">Live Events</a>
-            <a href="#" class="nav-link">Store</a>
+            <a href="#" class="nav-link">Links</a>
+            <a href="#" class="nav-link">About</a>
 </div>
  
 
@@ -39,9 +39,9 @@
             <a href="../main/english.php">Eglish</a>
             <a href="../main/sinhala.php">සිංහල</a>
             <a href="../main/chanting.php">Chanting</a>
-            <a href="#">Live Events</a>
-            <a href="#">Free Meditations</a>
-            <a href="#">Store</a>
+            <a href="#">Links</a>
+            <a href="#">About</a>
+           
             <!-- <a href="#" class="mobile-join">Join Lion’s Roar</a>  -->
         </div>
     </div>

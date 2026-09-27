@@ -10,7 +10,7 @@
 
 
 
-		
+	<!-- Add this later	
 	<a href="narada_sin.php" class="card-link">
             <div class="meditation">
                 <div class="teacher-image teacher-1">
@@ -25,7 +25,7 @@
 විසූහ. 1983 ඔක්තෝබර් 2 දින උන්වහන්සේ අපවත් වී වදාළ සේක.</p>
                 </div>
             </div>
-	</a>
+	</a> -->
 
 
 		
@@ -45,7 +45,20 @@
 	</a>
 	
 	
-		
+	<a href="dhammagaru_sin.php" class="card-link">
+            <div class="meditation">
+                <div class="teacher-image teacher-1">
+                    <img src="../../images/dhammagaru.jpg"
+                         alt="Dhammagaru Thero">
+                </div>
+                <div style="flex:1">
+                    <h3>පූජ්‍ය උස්ගොඩ ධම්‍මගරු හිමිපාණන් වහන්සේ</h3>
+                    <p>පූජ්‍ය උස්ගොඩ ධම්‍මගරු හිමිපාණෝ සිංහල විශ්වකෝෂයේ සහකාර කර්තෘවරයකු 
+වශයෙන් මෙන් ම නිට්ටඹුව සාරිපුත්ත අධ්‍යාපන විද්‍යාපීඨයේ කථිකාචාර්යවරයකු වශයෙන් ද 
+කටයුතු කළ අතර වර්තමානයේ ඇමරිකාවේ ලොස්ඇන්ජලීස් බෞද්ධ විහාරයේ වැඩ වසති.</p>
+                </div>
+            </div>
+	</a>	
 		
 	
 

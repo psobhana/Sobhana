@@ -33,8 +33,31 @@
 </div>	
 	
             </div>
+
+
 			
-<?php include '../../include/footer_items.php'; ?>			
+	   <div>
+                <div class="footer-heading">Languages</div>
+                <div class="footer-links">
+                <a href="../main/english.php">Eglish</a>
+		<a href="../main/sinhala.php">සිංහල</a>
+		<a href="../main/chanting.php">Chanting</a>
+                </div>
+            </div>
+
+            <div>
+                <div class="footer-heading">Links</div>
+                <div class="footer-links">
+                <!-- Add this later
+		<a href="#">Live Events</a>
+		<a href="#">Membership</a>
+		<a href="#">For Teachers</a> -->
+		<a href="#">About Us</a>
+                </div>
+            </div>
+			
+			
+			
             
 		<!-- <div class="newsletter">
                 <strong>Stay on the path</strong>
