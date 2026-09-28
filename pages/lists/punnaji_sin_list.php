@@ -70,7 +70,7 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <div class="clear"></div>
 
 <ul class="list-dotted-move">
-		<li><a href="punnaji_eng.php">ඉංග්‍රීසි ධර්ම දේශනා හා දහම් ලිපි</a></li>
+		<li><a href="punnaji_eng.php">ඉංග්‍රීසි ධර්ම දේශනා</a></li>
 </ul>
 
 

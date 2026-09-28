@@ -16,17 +16,17 @@ $offset = ($page - 1) * $limit;
 
 /* Fixed Filter */
 $author   = "Dhammagaru";
-$length   = "Long";
-$language = "Sinhala";
+$language   = "Sinhala";
+$talk = "Meditation";
 
 /* Count total rows */
 $countSql = "SELECT COUNT(*) FROM Talk_list2
              WHERE author = ?
-             AND length = ?
-             AND language = ?";
+             AND language = ?
+             AND talk = ?";
 
 $countStmt = $pdo->prepare($countSql);
-$countStmt->execute([$author, $length, $language]);
+$countStmt->execute([$author, $language, $talk]);
 
 $totalRows = $countStmt->fetchColumn();
 $totalPages = ceil($totalRows / $limit);
@@ -34,34 +34,29 @@ $totalPages = ceil($totalRows / $limit);
 /* Fetch Data */
 $sql = "SELECT * FROM Talk_list2
         WHERE author = ?
-        AND length = ?
         AND language = ?
+        AND talk = ?
         ORDER BY id ASC
         LIMIT $limit OFFSET $offset";
 
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$author, $length, $language]);
+$stmt->execute([$author, $language, $talk]);
 
 $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <section-max class="meditations">
 
-    <div class="container_max">
-
+<div class="container_max">
         <!-- Teacher Card -->
-        <div class="meditation-grid_max">
+ <div class="meditation-grid_max">
+<div class="meditation">
+<div class="container2">
 
-            <div class="meditation">
-
-
-
- <div class="container2">
-
-
-<img src="../../images/dhammagaru.jpg" alt="Dhammagaru Thero" class="content-image">
+<img src="../../images/dhammagaru.jpg" alt="Dhammaruwan" class="content-image">
 
 <h3>පූජ්‍ය උස්ගොඩ ධම්‍මගරු හිමිපාණන් වහන්සේ</h3>
+<h4>භාවනා වැඩසටහන්</h4>
 
 <p>(Pandit, BA Hons, MA, MEd, MSSc, MPhil)</p>
 <p>පූජ්‍ය උස්ගොඩ ධම්‍මගරු හිමිපාණෝ සිංහල විශ්වකෝෂයේ සහකාර කර්තෘවරයකු 
@@ -69,19 +64,13 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 කටයුතු කළ අතර වර්තමානයේ ඇමරිකාවේ ලොස්ඇන්ජලීස් බෞද්ධ විහාරයේ වැඩ වසති.</p>
 
 <div class="clear"></div>
-
 <?php include 'dhammagaru_categories.php'; ?>
 
 
 </div>
-
-
-
-            </div>
-
-        </div>
-
-    </div>
+</div>
+</div>
+</div>
 
 	       <!-- Main table -->
  <?php include '../../include/table.php'; ?>	
@@ -95,5 +84,4 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	
 </div>
 </div>
-
 </section-max>

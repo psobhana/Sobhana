@@ -69,9 +69,8 @@ Nittambuwa.</p>
 
 <div class="clear"></div>
 
-<ul class="list-dotted-move">
-		<li><a href="dhammagaru_sin.php">Sinhala Dhamma Talks</a></li>
-</ul>
+<?php include 'dhammagaru_categories.php'; ?>
+
 
 
 </div>
