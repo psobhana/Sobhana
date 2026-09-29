@@ -46,6 +46,24 @@ Buddhist viharas all over the world run by students of this center.</p>
 
 
 
+<a href="dhammagaru_chant.php" class="card-link">
+            <div class="meditation">
+                <div class="teacher-image teacher-1">
+                    <img src="../../images/dhammagaru.jpg"
+                         alt="Dhammagaru Thero">
+                </div>
+                <div style="flex:1">
+                    <h3>Bhante Dhammagaru</h3>
+                    <p>Ven. Usgoda Dhammagaru lives in Los Angeles Buddhist Vihara, 
+California, USA. He was an Assistant Editor in Sinhala Encyclopaedia 
+and a former Lecturer of Sariputta National College of Education in 
+Nittambuwa.</p>
+                </div>
+            </div>
+</a>
+
+
+
 
 <a href="chandakitthi_chant.php" class="card-link">
             <div class="meditation">

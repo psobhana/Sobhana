@@ -36,7 +36,7 @@
 
 <!-- Footer -->
 <?php include 'include/footer.php'; ?>
-
+<?php include 'include/stat_counter.php'; ?>
 <script>
 <?php include 'js/scripts.js'; ?>
 <?php include 'js/quotes.js'; ?>

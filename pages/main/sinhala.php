@@ -32,7 +32,7 @@
 
 <!-- Footer -->
 <?php include '../../include/footer_pages.php'; ?>
-
+<?php include '../../include/stat_counter.php'; ?>
 <script>
 <?php include '../../js/scripts.js'; ?>
 <?php include '../../js/search_pages.js'; ?>

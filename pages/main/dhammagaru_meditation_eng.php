@@ -27,7 +27,7 @@ include '../../include/header_pages.php';
 <?php /* include 'include/mouseoverpic.php'; */ ?>
 
 <!-- Links with Pictures -->
-<?php include '../lists/gunalankara_chant_list.php'; ?>
+<?php include '../lists/dhammagaru_meditation_eng_list.php'; ?>
 
 <!-- Bottom Text -->
 <?php /* include 'include/bottomtext.php'; */ ?>
