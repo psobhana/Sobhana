@@ -20,7 +20,7 @@
   <main>
     <section class="hero">
       <a href="notes.php" class="btn-primary">Notes</a>
-      <a href="links.php" class="btn-primary">Links</a>
+      <a href="links.php" class="btn-primary">PT Links</a>
       <a href="ytlinks.php" class="btn-primary">YT Links</a>	  
       <a href="keep.php" class="btn-primary">Keep</a>
       <a href="palbum.php" class="btn-primary">Albums</a>

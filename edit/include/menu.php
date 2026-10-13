@@ -64,6 +64,24 @@
             </a>
         </li>
 	<li>
+            <a href="id_range.php"
+               class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                <img src="https://unpkg.com/lucide-static@latest/icons/user.svg"
+                     alt="Profile"
+                     class="lucide mr-3">
+                ID Range
+            </a>
+        </li>
+	<li>
+            <a href="search_all.php"
+               class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                <img src="https://unpkg.com/lucide-static@latest/icons/user.svg"
+                     alt="Profile"
+                     class="lucide mr-3">
+                Search All
+            </a>
+        </li>
+	<li>
             <a href="views/dhammagaru_long_sinhala.php"
                class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
                 <img src="https://unpkg.com/lucide-static@latest/icons/user.svg"

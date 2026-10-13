@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * Keep Notes
  * Full-featured notes app with sidebar, search, undo/redo, and auto-save.
  * Requires api.php in the same directory.
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+  <?php require_once 'config_keep.php'; ?>
   <?php require_once 'menubar.php'; ?>
 
   <div class="keep-app">

@@ -17,7 +17,7 @@
     <ul class="nav-menu" id="navMenu">
       <li><a href="index.php" class="nav-link">Home</a></li>
       <li><a href="notes.php" class="nav-link">Notes</a></li>
-      <li><a href="links.php" class="nav-link">Links</a></li>
+      <li><a href="links.php" class="nav-link">PT Links</a></li>
       <li><a href="ytlinks.php" class="nav-link">YT Links</a></li>
        <li><a href="keep.php" class="nav-link">Keep</a></li>
      <li><a href="palbum.php" class="nav-link">Albums</a></li>

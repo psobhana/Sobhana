@@ -1,4 +1,4 @@
-<ul class="list-dotted-move">
+<ul class="list-dotted-move2">
 <li><a href="dhammagaru_eng.php">Dhamma Talks</a></li>
 <li><a href="dhammagaru_meditation_eng.php">Meditation Retreats</a></li>
 <li><a href="dhammagaru_sin.php">ධර්ම දේශනා</a></li>

@@ -13,7 +13,7 @@
 	<a href="pages/main/english.php" class="card-link">
             <article class="card">
                 <div class="card-image image-1">
-				<img src="images/english.jpg" alt="English"></div>
+				<img src="images/english.png" alt="English"></div>
                 <div class="card-body">
                     <!-- <div class="card-label">TEACHING • JOSEPH GOLDSTEIN</div> -->
                     <h3>English Dhamma Talks & Articles</h3>
@@ -25,7 +25,7 @@
 	
 	<a href="pages/main/sinhala.php" class="card-link">
             <article class="card">
-                <div class="card-image image-2"><img src="images/sinhala.jpg" alt="Sinhala"></div>
+                <div class="card-image image-2"><img src="images/sinhala.png" alt="Sinhala"></div>
                 <div class="card-body">
                     <!-- <div class="card-label">BLACK HISTORY MONTH</div> -->
                     <h3>සිංහල ධර්ම දේශනා හා දහම් ලිපි</h3>

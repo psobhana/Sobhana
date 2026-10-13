@@ -48,6 +48,7 @@ $talks = $stmt->fetchAll();
 <meta charset="UTF-8">
 <title>Talk List</title>
 <link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="include/edit.svg">
 <style>
 a { text-decoration:none; }
 .actions a { margin-right:8px; }
