@@ -37,12 +37,30 @@
             </a>
         </li>
         <li>
+            <a href="../pdf_table.php"
+               class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                <img src="https://unpkg.com/lucide-static@latest/icons/home.svg"
+                     alt="Home"
+                     class="lucide mr-3">
+                Pdf Table
+            </a>
+        </li>
+        <li>
             <a href="../add.php"
                class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
                 <img src="https://unpkg.com/lucide-static@latest/icons/user.svg"
                      alt="Profile"
                      class="lucide mr-3">
-                Add Data
+                Add Talks Data
+            </a>
+        </li>
+        <li>
+            <a href="../add_pdf.php"
+               class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                <img src="https://unpkg.com/lucide-static@latest/icons/user.svg"
+                     alt="Profile"
+                     class="lucide mr-3">
+                Add Pdf Data
             </a>
         </li>
 	<li>
@@ -51,7 +69,16 @@
                 <img src="https://unpkg.com/lucide-static@latest/icons/user.svg"
                      alt="Profile"
                      class="lucide mr-3">
-                Import TSV
+                Import Talks TSV
+            </a>
+        </li>
+	<li>
+            <a href="../import_pdf_tsv.php"
+               class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                <img src="https://unpkg.com/lucide-static@latest/icons/user.svg"
+                     alt="Profile"
+                     class="lucide mr-3">
+                Import Pdf TSV
             </a>
         </li>
 	<li>
@@ -60,7 +87,16 @@
                 <img src="https://unpkg.com/lucide-static@latest/icons/user.svg"
                      alt="Profile"
                      class="lucide mr-3">
-                Export TSV
+                Export Talks TSV
+            </a>
+        </li>
+	<li>
+            <a href="../export_pdf_tsv.php"
+               class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                <img src="https://unpkg.com/lucide-static@latest/icons/user.svg"
+                     alt="Profile"
+                     class="lucide mr-3">
+                Export Pdf TSV
             </a>
         </li>
 	<li>
@@ -69,7 +105,16 @@
                 <img src="https://unpkg.com/lucide-static@latest/icons/user.svg"
                      alt="Profile"
                      class="lucide mr-3">
-                ID Range
+                ID Range Talks
+            </a>
+        </li>
+	<li>
+            <a href="../id_range_pdf.php"
+               class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                <img src="https://unpkg.com/lucide-static@latest/icons/user.svg"
+                     alt="Profile"
+                     class="lucide mr-3">
+                ID Range Pdf
             </a>
         </li>
 	<li>
@@ -78,7 +123,16 @@
                 <img src="https://unpkg.com/lucide-static@latest/icons/user.svg"
                      alt="Profile"
                      class="lucide mr-3">
-                Search All
+                Search All Talks
+            </a>
+        </li>
+	<li>
+            <a href="../search_all_pdf.php"
+               class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                <img src="https://unpkg.com/lucide-static@latest/icons/user.svg"
+                     alt="Profile"
+                     class="lucide mr-3">
+                Search All Pdf
             </a>
         </li>
 	<li>

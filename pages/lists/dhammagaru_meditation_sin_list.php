@@ -58,10 +58,7 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <h3>පූජ්‍ය උස්ගොඩ ධම්‍මගරු හිමිපාණන් වහන්සේ</h3>
 <h4>භාවනා වැඩසටහන්</h4>
 
-<p>(Pandit, BA Hons, MA, MEd, MSSc, MPhil)</p>
-<p>පූජ්‍ය උස්ගොඩ ධම්‍මගරු හිමිපාණෝ සිංහල විශ්වකෝෂයේ සහකාර කර්තෘවරයකු 
-වශයෙන් මෙන් ම නිට්ටඹුව සාරිපුත්ත අධ්‍යාපන විද්‍යාපීඨයේ කථිකාචාර්යවරයකු වශයෙන් ද 
-කටයුතු කළ අතර වර්තමානයේ ඇමරිකාවේ ලොස්ඇන්ජලීස් බෞද්ධ විහාරයේ වැඩ වසති.</p>
+<?php include 'dhammagaru_about_sin.php'; ?>
 
 <div class="clear"></div>
 <?php include 'dhammagaru_categories.php'; ?>

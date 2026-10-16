@@ -1,4 +1,3 @@
-
 :root{
     --primary:#9C6644;
     --primary-dark:#7f4f2f;
@@ -1827,3 +1826,68 @@ body.dark-mode .pagination a.active {
 
 /* end of
 @media(max-width:600px) */
+
+
+
+/* PDF column and PDF icons */
+.pdf-column {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.pdf-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.pdf-link:hover {
+    color: var(--primary);
+    opacity: .8;
+}
+
+@media (max-width: 600px) {
+    th.pdf-column,
+    td.pdf-column {
+        display: none;
+    }
+}
+
+
+
+/* Mobile PDF links sit inline with the audio, video and share icons */
+.mobile-pdf-links {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .mobile-icons .mobile-pdf-links {
+        display: contents !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    .mobile-icons .mobile-pdf-link {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 26px;
+        height: 26px;
+        flex: 0 0 26px;
+        margin: 0;
+        padding: 3px 5px;
+        color: var(--text);
+        vertical-align: middle;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    .mobile-icons .mobile-pdf-link svg {
+        display: block !important;
+        width: 18px;
+        height: 18px;
+    }
+}
