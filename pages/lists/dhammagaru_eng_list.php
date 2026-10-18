@@ -32,11 +32,19 @@ $totalRows = $countStmt->fetchColumn();
 $totalPages = ceil($totalRows / $limit);
 
 /* Fetch Data */
-$sql = "SELECT * FROM Talk_list2
-        WHERE author = ?
-        AND length = ?
-        AND language = ?
-        ORDER BY id ASC
+$sql = "SELECT t.*,
+               (
+                   SELECT GROUP_CONCAT(DISTINCT p.file_number
+                                       ORDER BY p.file_number
+                                       SEPARATOR ',')
+                   FROM Pdf_list p
+                   WHERE p.talk_number = t.file_number
+               ) AS pdf_file_numbers
+        FROM Talk_list2 t
+        WHERE t.author = ?
+          AND t.length = ?
+          AND t.language = ?
+        ORDER BY t.id ASC
         LIMIT $limit OFFSET $offset";
 
 $stmt = $pdo->prepare($sql);
@@ -51,11 +59,8 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         <!-- Teacher Card -->
         <div class="meditation-grid_max">
-
             <div class="meditation">
-
-   <div class="container2">
-
+ <div class="container2">
 
 <img src="../../images/dhammagaru.jpg" alt="Dhammagaru Thero" class="content-image">
 
@@ -68,17 +73,13 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <?php include 'dhammagaru_categories.php'; ?>
 
 
-
 </div>
-            </div>
-
-        </div>
-
-    </div>
+</div>
+</div>
+</div>
 
 	       <!-- Main table -->
-<?php include '../../include/table.php'; ?>
-
+ <?php include '../../include/table_pdf.php'; ?>	
 	
 	       <!-- External links -->
 <div class="container_max">

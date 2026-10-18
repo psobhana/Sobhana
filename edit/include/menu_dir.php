@@ -9,8 +9,14 @@
      aria-hidden="true"></div>
 
 <!-- Off‑canvas menu container -->
+<!-- Off-canvas menu container -->
 <nav id="slideMenu"
-     class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out md:transform-none md:shadow-none"
+     class="fixed inset-y-0 left-0 w-64 max-h-screen
+            flex flex-col overflow-hidden
+            bg-white shadow-lg
+            transform -translate-x-full
+            transition-transform duration-300 ease-in-out
+            md:transform-none md:shadow-none"
      aria-label="Primary navigation">
 
     <!-- Close button (visible on mobile) -->
@@ -25,8 +31,11 @@
         </button>
     </div>
 
-    <!-- Navigation links -->
-    <ul class="mt-2 space-y-1">
+
+<!-- Scrollable navigation links -->
+<div class="flex-1 min-h-0 overflow-y-auto overscroll-contain">
+    <ul class="mt-2 space-y-1 pb-4">
+	
         <li>
             <a href="../index.php"
                class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
@@ -136,6 +145,24 @@
             </a>
         </li>
 	<li>
+            <a href="../delete_range.php"
+               class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                <img src="https://unpkg.com/lucide-static@latest/icons/user.svg"
+                     alt="Profile"
+                     class="lucide mr-3">
+                DELETE Range
+            </a>
+        </li>
+	<li>
+            <a href="../delete_range_pdf.php"
+               class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                <img src="https://unpkg.com/lucide-static@latest/icons/user.svg"
+                     alt="Profile"
+                     class="lucide mr-3">
+                DELETE Range Pdf
+            </a>
+        </li>
+	<li>
             <a href="dhammagaru_long_sinhala.php"
                class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
                 <img src="https://unpkg.com/lucide-static@latest/icons/user.svg"
@@ -153,12 +180,15 @@
                 Language & Length
             </a>
         </li>
+		
     </ul>
+</div>
 
     <!-- Optional footer inside the menu -->
-    <div class="mt-auto p-4 text-sm text-gray-500">
-        © 2026 Talks Database
-    </div>
+<!-- Footer -->
+<div class="shrink-0 p-4 text-sm text-gray-500 bg-white">
+    © 2026 Talks Database
+</div>
 </nav>
 
 <script>

@@ -1845,8 +1845,9 @@ body.dark-mode .pagination a.active {
 }
 
 .pdf-link:hover {
-    color: var(--primary);
-    opacity: .8;
+    /*color: var(--primary);
+    opacity: .8; */
+   opacity: 0.9;
 }
 
 @media (max-width: 600px) {
