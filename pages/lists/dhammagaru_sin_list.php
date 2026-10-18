@@ -65,6 +65,7 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <img src="../../images/dhammagaru.jpg" alt="Dhammagaru Thero" class="content-image">
 
 <h3>පූජ්‍ය උස්ගොඩ ධම්‍මගරු හිමිපාණන් වහන්සේ</h3>
+<h4>ධර්ම දේශනා</h4>
 
 <?php include 'dhammagaru_about_sin.php'; ?>
 

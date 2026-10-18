@@ -65,6 +65,7 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <img src="../../images/dhammagaru.jpg" alt="Dhammagaru Thero" class="content-image">
 
 <h3>Bhante Dhammagaru</h3>
+<h4>Dhamma Talks</h4>
 
 <?php include 'dhammagaru_about_eng.php'; ?>
 

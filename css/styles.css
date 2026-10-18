@@ -1892,3 +1892,104 @@ body.dark-mode .pagination a.active {
         height: 18px;
     }
 }
+
+/* =================================*/
+
+/* Articles table*/
+
+
+/* Title and mobile share icon */
+.title-cell2 {
+    width: 100%;
+}
+
+.title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.title-text2 {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+/* Hide mobile share icon on desktop */
+.mobile-share {
+    display: none;
+    flex-shrink: 0;
+}
+
+/* Desktop table */
+@media (min-width: 769px) {
+    .desktop-view {
+        display: table-header-group;
+    }
+
+    .number-column {
+        width: 60px;
+        white-space: nowrap;
+    }
+
+    .desktop-share {
+        text-align: center;
+    }
+
+    .mobile-share {
+        display: none;
+    }
+}
+
+/* Mobile table */
+@media (max-width: 768px) {
+    .desktop-view {
+        display: none;
+    }
+
+    .desktop-share {
+        display: none;
+    }
+
+.title-text2 {
+    display: inline;
+    overflow-wrap: anywhere;
+}
+
+/* Share icon follows the title text */
+.mobile-share {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    gap: 4px;
+    margin-left: 6px;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.title-row {
+    display: block;
+    width: 100%;
+}
+
+
+
+    .number-column {
+        vertical-align: top;
+        white-space: nowrap;
+    }
+
+    .table-wrapper2 table {
+        width: 100%;
+        table-layout: auto;
+    }
+
+    .table-wrapper2 th,
+    .table-wrapper2 td {
+        padding: 8px;
+    }
+}
+
