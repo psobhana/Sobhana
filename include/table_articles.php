@@ -29,12 +29,14 @@
                             'UTF-8'
                         );
 
-                        $safeTitle = htmlspecialchars(
-                            $row['title'],
-                            ENT_QUOTES,
-                            'UTF-8'
-                        );
-                    ?>
+                        $safeTitle = '<a href="' . $safePdfLink . '" target="_blank">'
+							. htmlspecialchars(
+							$row['title'],
+							ENT_QUOTES,
+							'UTF-8'
+							)
+							. '</a>';
+			?>
 
                         <tr>
                             <!-- Automatic Number -->
