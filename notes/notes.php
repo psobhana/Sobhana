@@ -13,6 +13,7 @@
   <meta name="description" content="Simple auto-saving notes">
   <title>Notes</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="notes.svg">
 </head>
 <body>
 

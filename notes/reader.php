@@ -12,6 +12,7 @@
   <meta name="description" content="Open any URL in Textise.net for distraction-free reading">
   <title>Textise URL Reader</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="notes.svg">
 </head>
 <body>
 

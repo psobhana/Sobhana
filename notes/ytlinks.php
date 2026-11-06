@@ -13,6 +13,7 @@
   <meta name="description" content="Clean YouTube URLs by removing unnecessary parameters">
   <title>YouTube URL Converter</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="notes.svg">
 </head>
 <body>
 

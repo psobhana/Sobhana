@@ -12,6 +12,7 @@
   <meta name="description" content="Convert PlayTube redirect URLs back to original YouTube links">
   <title>PlayTube to YouTube Converter</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="notes.svg">
 </head>
 <body>
 

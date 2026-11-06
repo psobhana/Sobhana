@@ -24,7 +24,7 @@ $albums = $stmt->fetchAll();
     <meta name="theme-color" content="#6366f1">
     <title><?php echo htmlspecialchars(SITE_TITLE, ENT_QUOTES, 'UTF-8'); ?></title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="album.svg">
+    <link rel="shortcut icon" href="notes.svg">
 </head>
 <body>
 

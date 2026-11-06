@@ -13,6 +13,7 @@
   <meta name="description" content="Full-featured notes with auto-save and dark mode">
   <title>Keep</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="notes.svg">
 </head>
 <body>
   <?php require_once 'config_keep.php'; ?>

@@ -15,45 +15,56 @@ if ($page < 1) {
 $offset = ($page - 1) * $limit;
 
 /* Fixed Filter */
+
+
 $author   = "Dhammagaru";
-$language   = "English";
 $talk = "Meditation";
+$language = "English";
 
 /* Count total rows */
 $countSql = "SELECT COUNT(*) FROM Talk_list2
              WHERE author = ?
-             AND language = ?
-             AND talk = ?";
+             AND talk = ?
+             AND language = ?";
 
 $countStmt = $pdo->prepare($countSql);
-$countStmt->execute([$author, $language, $talk]);
+$countStmt->execute([$author, $talk, $language]);
 
 $totalRows = $countStmt->fetchColumn();
 $totalPages = ceil($totalRows / $limit);
 
 /* Fetch Data */
-$sql = "SELECT * FROM Talk_list2
-        WHERE author = ?
-        AND language = ?
-        AND talk = ?
-        ORDER BY id ASC
+$sql = "SELECT t.*,
+               (
+                   SELECT GROUP_CONCAT(DISTINCT p.file_number
+                                       ORDER BY p.file_number
+                                       SEPARATOR ',')
+                   FROM Pdf_list p
+                   WHERE p.talk_number = t.file_number
+               ) AS pdf_file_numbers
+        FROM Talk_list2 t
+        WHERE t.author = ?
+          AND t.talk = ?
+          AND t.language = ?
+        ORDER BY t.id ASC
         LIMIT $limit OFFSET $offset";
 
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$author, $language, $talk]);
+$stmt->execute([$author, $talk, $language]);
 
 $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <section-max class="meditations">
 
-<div class="container_max">
-        <!-- Teacher Card -->
- <div class="meditation-grid_max">
-<div class="meditation">
-<div class="container2">
+    <div class="container_max">
 
-<img src="../../images/dhammagaru.jpg" alt="Dhammaruwan" class="content-image">
+        <!-- Teacher Card -->
+        <div class="meditation-grid_max">
+            <div class="meditation">
+ <div class="container2">
+
+<img src="../../images/dhammagaru.jpg" alt="Dhammagaru Thero" class="content-image">
 
 <h3>Bhante Dhammagaru</h3>
 <h4>Meditation Retreats</h4>
@@ -61,6 +72,7 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <?php include 'dhammagaru_about_eng.php'; ?>
 
 <div class="clear"></div>
+
 <?php include 'dhammagaru_categories.php'; ?>
 
 
@@ -70,7 +82,7 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </div>
 
 	       <!-- Main table -->
- <?php include '../../include/table.php'; ?>	
+ <?php include '../../include/table_pdf.php'; ?>	
 	
 	       <!-- External links -->
 <div class="container_max">
@@ -81,4 +93,5 @@ $talks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	
 </div>
 </div>
+
 </section-max>
